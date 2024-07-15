@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+# Dish Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a Dish Management System with a frontend built using React and a backend using Node.js and Express and database using MongoDB.
 
-## Available Scripts
+## Folder Structure
+DISH-MANAGEMENT-SYSTEM/
+├── client/
+│   ├── node_modules/
+│   ├── public/
+│   │   ├── index.html
+│   └── src/
+│       ├── assets/
+│       │   ├── 1.jpg
+│       │   ├── 2.jpg
+│       │   └── 3.jpg
+│       ├── components/
+│       │   ├── DishCard.css
+│       │   ├── DishCard.js
+│       │   ├── DishList.js
+│       │   ├── RealTimeUpdate.js
+│       ├── App.css
+│       ├── App.js
+│       ├── App.test.js
+│       ├── index.css
+│       ├── index.js
+│       ├── reportWebVitals.js
+│       ├── setupTests.js
+│       ├── WelcomeSlider.js
+│       ├── WelcomeSlider.css
+├── server/
+│   ├── controllers/
+│   │   ├── dishController.js
+│   ├── models/
+│   │   ├── dishModel.js
+│   ├── routes/
+│   │   ├── dishRoutes.js
+│   ├── seed/
+│   │   ├── seedData.js
+│   ├── node_modules/
+│   ├── .env
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── server.js
+├── .gitignore
+├── README.md
 
-In the project directory, you can run:
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Make sure you have the following installed on your machine:
+- Node.js
+- npm or yarn
 
-### `npm test`
+### Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository
+    ```sh
+    git clone https://github.com/yourusername/dish-management-system.git
+    cd dish-management-system
+    ```
 
-### `npm run build`
+2. Install dependencies for both client and server
+    ```sh
+    # Install server dependencies
+    cd server
+    npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    # Install client dependencies
+    cd ../client
+    npm install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Create a `.env` file in the `server` directory and add the necessary environment variables (e.g., database connection string).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Seed the database (if necessary)
+    ```sh
+    cd server
+    node seed/seedData.js
+    ```
 
-### `npm run eject`
+### Running the Application
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Start the server
+    ```sh
+    cd server
+    npm start
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Start the client
+    ```sh
+    cd client
+    npm start
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Open your browser and navigate to `http://localhost:3000`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Project Structure
 
-## Learn More
+#### Client
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `public/`: Contains the `index.html` file.
+- `src/`: Contains the React components and other assets.
+  - `assets/`: Contains the images used in the application.
+  - `components/`: Contains the React components such as `DishCard`, `DishList`, `RealTimeUpdate`, etc.
+  - `App.js`: Main component of the React application.
+  - `index.js`: Entry point of the React application.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Server
 
-### Code Splitting
+- `controllers/`: Contains the controller files for handling requests.
+- `models/`: Contains the Mongoose models for the database.
+- `routes/`: Contains the route files for the application.
+- `seed/`: Contains the script for seeding the database.
+- `server.js`: Entry point of the Node.js application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
