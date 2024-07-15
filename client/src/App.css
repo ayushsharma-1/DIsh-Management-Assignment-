@@ -1,0 +1,15 @@
+.main-content {
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: calc(100vh - 10px);
+  font-family: 'Bona Nova SC', sans-serif;
+  padding: 0 400px;
+}
+.Dish1 {
+  font-family: 'Bona Nova SC', sans-serif;
+  text-align: center;
+  display: block; 
+  margin: auto; 
+  margin-top: 20px;
+}

@@ -1,0 +1,36 @@
+/* DishCard.css */
+.List {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .List img {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Adjust max-width as per your design */
+    border-radius: 10px;
+  }
+  
+  .List h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    font-family: 'Bona Nova SC', serif;
+  }
+  
+  .List button {
+    background-color: #dc3545;
+    border: none;
+    padding: 10px 20px;
+    margin: 30px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
