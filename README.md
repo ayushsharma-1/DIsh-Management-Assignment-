@@ -3,47 +3,45 @@
 This project is a Dish Management System with a frontend built using React and a backend using Node.js and Express and database using MongoDB.
 
 ## Folder Structure
-DISH-MANAGEMENT-SYSTEM/
 ├── client/
-│   ├── node_modules/
-│   ├── public/
-│   │   ├── index.html
-│   └── src/
-│       ├── assets/
-│       │   ├── 1.jpg
-│       │   ├── 2.jpg
-│       │   └── 3.jpg
-│       ├── components/
-│       │   ├── DishCard.css
-│       │   ├── DishCard.js
-│       │   ├── DishList.js
-│       │   ├── RealTimeUpdate.js
-│       ├── App.css
-│       ├── App.js
-│       ├── App.test.js
-│       ├── index.css
-│       ├── index.js
-│       ├── reportWebVitals.js
-│       ├── setupTests.js
-│       ├── WelcomeSlider.js
-│       ├── WelcomeSlider.css
+│ ├── node_modules/
+│ ├── public/
+│ │ ├── index.html
+│ └── src/
+│ ├── assets/
+│ │ ├── 1.jpg
+│ │ ├── 2.jpg
+│ │ └── 3.jpg
+│ ├── components/
+│ │ ├── DishCard.css
+│ │ ├── DishCard.js
+│ │ ├── DishList.js
+│ │ ├── RealTimeUpdate.js
+│ ├── App.css
+│ ├── App.js
+│ ├── App.test.js
+│ ├── index.css
+│ ├── index.js
+│ ├── reportWebVitals.js
+│ ├── setupTests.js
+│ ├── WelcomeSlider.js
+│ ├── WelcomeSlider.css
 ├── server/
-│   ├── controllers/
-│   │   ├── dishController.js
-│   ├── models/
-│   │   ├── dishModel.js
-│   ├── routes/
-│   │   ├── dishRoutes.js
-│   ├── seed/
-│   │   ├── seedData.js
-│   ├── node_modules/
-│   ├── .env
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── server.js
+│ ├── controllers/
+│ │ ├── dishController.js
+│ ├── models/
+│ │ ├── dishModel.js
+│ ├── routes/
+│ │ ├── dishRoutes.js
+│ ├── seed/
+│ │ ├── seedData.js
+│ ├── node_modules/
+│ ├── .env
+│ ├── package-lock.json
+│ ├── package.json
+│ ├── server.js
 ├── .gitignore
 ├── README.md
-
 
 ## Getting Started
 
